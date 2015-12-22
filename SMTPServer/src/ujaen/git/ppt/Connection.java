@@ -29,6 +29,7 @@ public class Connection implements Runnable, RFC5322 {
 
 		String inputData = null;
 		String outputData = "";
+		String novaleparanada="";
 		
 
 		if (mSocket != null) {
