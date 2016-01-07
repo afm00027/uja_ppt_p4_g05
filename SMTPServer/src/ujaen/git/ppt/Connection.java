@@ -18,6 +18,8 @@ public class Connection implements Runnable, RFC5322 {
 	protected int mEstado = S_HELO;;
 	private boolean mFin = false;
 
+	public static String MSG_WELCOME = "Bienvenido al programa\r\n";
+
 	public Connection(Socket s) {
 		mSocket = s;
 		mEstado = 0;
@@ -29,7 +31,6 @@ public class Connection implements Runnable, RFC5322 {
 
 		String inputData = null;
 		String outputData = "";
-		String novaleparanada="";
 		
 
 		if (mSocket != null) {
@@ -57,6 +58,27 @@ public class Connection implements Runnable, RFC5322 {
 					// TODO: Máquina de estados del protocolo
 					switch (mEstado) {
 					case S_HELO:
+						
+						break;
+					case S_HELO:
+						
+						break;
+
+					case S_MAIL:
+						
+						break;
+
+					case S_RCPT:
+						
+						break;
+
+					case S_DATA:
+						
+						break;
+					case S_RSET:
+						
+						break;
+					case S_QUIT:
 						
 						break;
 					default:
